@@ -79,4 +79,15 @@ def calaculator_v2():
     return r
 
 
+def dictionary_from_string(mystring: str):
+
+    if len(mystring) == 0:
+        print("mystring can't be null")
+        return
     
+    mydict = {}
+    
+    for i in range(0, len(mystring)):
+        mydict[mystring[i]] = i
+
+    print(mydict)

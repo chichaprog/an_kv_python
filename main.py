@@ -1,4 +1,3 @@
-import my_homework1 as m1
+import my_homework2 as m2
 
-r = m1.calaculator_v2()
-print(r)
+m2.dictionary_from_string("hello world")
