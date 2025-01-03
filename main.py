@@ -25,7 +25,15 @@ arr = [1,2,3,4,5]
 print(fun_8(arr))
 
 
-
-def array(arr,arr_2):
-    if len(arr) == len(arr_2):
-        
+obj = {}
+def array(arr,arr_2 , index = 0 , save_dist = {}):
+    if len(arr) != len(arr_2):
+        return None
+    if (index > 0):
+        return(arr,index + 1,save_dist + arr_2)
+    print("1")  
+index = 0
+arr = [1,2,3,4]
+arr_2 = [9,7,6,5]
+obj[arr[index]] = [arr_2[index]]
+       

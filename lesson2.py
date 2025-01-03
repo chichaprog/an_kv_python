@@ -144,3 +144,19 @@ obj = {
 # num = obj_if[inp]
 # print(num)
 
+obj = {}
+arr = [1,2,3,4]
+arr_2 = [9,7,6,5]
+
+def array(arr,arr_2 , index = 0 , save_dist = {}):
+    if len(arr) != len(arr_2):
+        return None
+    if (index > 0):
+        return(arr,index + 1,save_dist + arr_2)
+    obj[arr[index]] = [arr_2[index]]
+    print("1") 
+
+
+
+index = 0
+print(array(arr,arr_2))    
